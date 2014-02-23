@@ -4,5 +4,5 @@
 
 ## Overview
 
-Scssetup is a Sass framework for building and maintaing large applications.
+Scssetup**(sĕt′ŭp′)** is a Sass framework for building and maintaing large applications.
 
