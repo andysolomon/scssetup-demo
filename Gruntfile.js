@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         flatten: true,
         layout: 'layout.hbs',
         layoutdir: 'src/templates/layouts',
-        assets: 'dist/assets',
+        assets: 'prod/assets',
         partials: ['src/templates/pages/*.hbs', 'src/templates/parts/*.hbs']
       },
       demo: {
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
             data: ['src/data/*.{json,yml}']
         },
         files: {
-            'dist/': ['src/templates/pages/*.hbs']
+            'prod/': ['src/templates/pages/*.hbs']
         }
       }
     },
@@ -83,28 +83,28 @@ module.exports = function(grunt) {
     copy: {
       demo: {
         files: [
-          { expand: true, cwd: './styles', src: ['./**/*.*'], dest: 'dist/assets/css' },
-          { expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' },
+          { expand: true, cwd: './styles', src: ['./**/*.*'], dest: 'prod/assets/css' },
+          { expand: true, cwd: './js', src: ['./**/*.*'], dest: 'prod/assets/js' },
         ]
       },
       css: {
         files: [
-          { expand: true, cwd: './styles', src: ['./**/*.*'], dest: 'dist/assets/css' }
+          { expand: true, cwd: './styles', src: ['./**/*.*'], dest: 'prod/assets/css' }
         ]
       },
       js: {
         files: [
-          { expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' }
+          { expand: true, cwd: './js', src: ['./**/*.*'], dest: 'prod/assets/js' }
         ]
       },
       img: {
         files: [
-          { expand: true, cwd: './images', src: ['./**/*.*'], dest: 'dist/assets/images' }
+          { expand: true, cwd: './images', src: ['./**/*.*'], dest: 'prod/assets/images' }
         ]
       },
       fonts: {
         files: [
-          { expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'dist/assets/fonts' }
+          { expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'prod/assets/fonts' }
         ]
       }
     }
