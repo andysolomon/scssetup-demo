@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Effeckt.css</title>
+
+    <meta name="description" content="Sass-based CSS architecture for creating predictable and maintainable application style">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- Individual module CSS files here -->
+    <!-- Should we combine or not combine? -->
+    <link rel="stylesheet" href="{{assets}}/css/scssetup/application.css">
+    <link rel="stylesheet" href="{{assets}}/css/demo/demo.css">
+</head>
+
+<body>
+
+  <div data-effeckt-page="page-1">
+
+    <div class="page-wrap no-transitions" id="page-wrap">
+
+      {{>body}}
+
+      <div class="effeckt contributors readme">
+      </div>
+
+    </div><!-- div.page-wrap -->
+  </div>
+
+  <div data-effeckt-page="page-2">
+    <div class="page-wrap" id="page-2">
+    </div>
+  </div>
+
+  <div data-effeckt-page="page-3">
+    <div class="page-wrap" id="page-3">
+    </div>
+  </div>
+
+  <div data-effeckt-page="page-4">
+    <div class="page-wrap" id="page-4">
+    </div>
+  </div>
+
+  <div data-effeckt-page="page-5">
+    <div class="page-wrap" id="page-5">
+    </div>
+  </div>
+
+  <!-- libs -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-2.0.3.min.js"><\/script>')</script>
+
+  <!-- Individual module JS files here -->
+  <!-- Should we combine or not combine? -->
+  <!-- Should we provide minified versions? -->
+
+  <!-- demo -->
+  <script src="{{assets}}/js/demo/demo.js"></script>
+
+</body>
+
+</html>

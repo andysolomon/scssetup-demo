@@ -1,5 +1,5 @@
 {
-  "name": "Andrew Paul Solomon Gruntfile",
+  "name": "scssetup",
   "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -11,9 +11,36 @@
     "grunt-contrib-copy": "~0.4.1",
     "assemble": "~0.4.0",
     "grunt-gh-pages": "~0.6.0",
-    "grunt-contrib-sass": "~0.6.0"
+    "grunt-contrib-sass": "~0.7.2"
   },
   "engines": {
     "node": ">=0.10"
-  }
+  },
+  "description": "![Mou icon](http://f.cl.ly/items/3G0x1M1i3f112F0N3P3f/scssetup-logo--v21.png)",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "assemble": "~0.4.36",
+    "grunt": "~0.4.2",
+    "autoprefixer": "~0.5.20130629",
+    "grunt-autoprefixer": "~0.1.20130615",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-gh-pages": "~0.6.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "matchdep": "~0.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andysolomon/scssetup.git"
+  },
+  "author": "Andrew Solomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andysolomon/scssetup/issues"
+  },
+  "homepage": "https://github.com/andysolomon/scssetup"
 }
